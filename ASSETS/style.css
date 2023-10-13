@@ -1,0 +1,23 @@
+:root {
+    /* color */
+    --background--color: #F6F6F6 ;
+    --Button--Gradient : #9356DC ;
+    --grey : #353535 ;
+    --grey--2 : #EAEAEA ;
+    --Primary : #9356DC;
+    --Green : #99E2D0;
+    --Green--Font : #008766 ;
+    --White : #FFFFFF ;
+    --black : #101010 ;
+    --Secondary : #FCA311 ;
+    --primary--2l : #F5EDFF ;
+    --grey--tint4 :#7E7E7E ;
+
+    /* font */
+    --header--font :  'Roboto' ;
+    --header--font--weight :  700 ;
+    --header--font--size :  2,5rem ;
+    --header--font--height :  normal ;
+
+
+}
