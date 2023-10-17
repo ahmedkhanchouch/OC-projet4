@@ -54,8 +54,8 @@ h1{
         flex-shrink: 0;
     }
     header img{
-        width: 197px;
-        height: 36px;
+        width: 12.313rem;
+        height: 2.25rem;
         padding: 0px 19px 0px 16px;
         justify-content: center;
         align-items: center;
@@ -82,7 +82,7 @@ h1{
         padding: 22px 25px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
+        gap: 1rem;
         background: var(--Grey, #353535);
     }
     footer h2{
