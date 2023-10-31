@@ -1,5 +1,5 @@
 @import 'header';
-
+@import 'message';
 
 @media (max-width: 767.98px) {
     body{
@@ -8,6 +8,7 @@
         flex-direction: column;
     }
     
+
     .infogroupe{
         display: flex;
         flex-direction: column;
@@ -47,5 +48,9 @@
             /* Shadow/Instructions */
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     }
+    }
+    .cover img{
+        object-fit: cover;
+        width: 100%;
     }
 }
