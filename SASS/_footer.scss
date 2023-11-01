@@ -1,0 +1,25 @@
+
+.footsection{
+    display: flex;
+    width: 375px;
+    padding: 22px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--Grey, #353535);
+    .footsection__title{
+        color: var(--White, #FFF);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .footsection__nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .footsection__link{
+        color: $White;
+    }
+}

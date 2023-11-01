@@ -1,7 +1,69 @@
-@import 'header';
-@import 'message';
+/* color */
+$background--color: #F6F6F6 ;
+$Button--Gradient : #9356DC ;
+$grey : #353535 ;
+$grey--2 : #EAEAEA ;
+$Primary : #9356DC;
+$Green : #99E2D0;
+$Green--Font : #008766 ;
+$White : #FFFFFF ;
+$black : #101010 ;
+$Secondary : #FCA311 ;
+$primary--2l : #F5EDFF ;
+$grey--tint4 :#7E7E7E ;
+
+/* font */
+$header--font :  'Roboto' ;
+$header--font--weight :  700 ;
+$header--font--size :  2,5rem ;
+$header--font--height :  normal ;
+
+$section-font : 'roboto';
+$section-font-size : 1.5rem;
+$section-font-weight: 700 ;
+$section-font-height: 1.756rem;
+
+$button-font : 'Roboto';
+$button-font-size :1rem;
+$button-font-weight: 500;
+$button-font-height : 1.175rem;
+
+$paragraph-font : 'roboto' ;
+$paragraph-font-size : 1.125rem ;
+$paragraph-font-height : 1.4rem ;
+$paragraph-font-weight : 300 ;
+
+$section-font-2 : 'roboto';
+$section-font-2-size : 1.125rem ;
+$section-font-2-weight : 500;
+$section-font-2-height : 1.4rem;
+
+$menu-font : 'roboto';
+
+$menu-title-font-size : 1,125rem ;
+$menu-title-font-weight : 500 ;
+$menu-title-font-height : 1,4rem ;
+
+$menu-details-font-size : 0,95rem;
+$menu-details-font-weight : 300;
+$menu-details-font-height : 1,1rem;
+$menu-details-font-Spacing : 0,3rem;
+
+
+$menu-prize-font-size: 700;
+$menu-prize-font-height: 1.1rem;
+$menu-prize-font-weight: 700;
+
+$menu-section-font-size: 1rem;
+$menu-section-font-height : light; 
+$menu-section-font-weight : 300 ;
+
+
+
 
 @media (max-width: 767.98px) {
+    @import 'header';
+    @import 'message';
     body{
         margin: 0;
         display: flex;
@@ -19,11 +81,11 @@
             text-align: center;
     
         /* Section Title */
-            font-family:var(--section-font);
-            font-size:var(--section-font-size);
+            font-family:$section-font ;
+            font-size:$section-font-size;
             font-style: normal;
-            font-weight: var(--section-font-weight);
-            line-height: var(--section-font-height);
+            font-weight: $section-font-weight;
+            line-height: $section-font-height;
             padding: 0rem 3.63rem;
     
         }
@@ -52,5 +114,29 @@
     .cover img{
         object-fit: cover;
         width: 100%;
+    }
+    .footsection{
+        display: flex;
+        width: 375px;
+        padding: 22px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        background: var(--Grey, #353535);
+        .footsection__title{
+            color: var(--White, #FFF);
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .footsection__nav{
+            display: flex;
+            flex-direction: column;
+        }
+        .footsection__link{
+            color: $White;
+        }
     }
 }
