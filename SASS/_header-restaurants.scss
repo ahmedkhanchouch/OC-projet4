@@ -1,0 +1,33 @@
+.navbar__restaurant{
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: ROW;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    gap: 42px;
+    display: flex;
+    width: 23.4375rem;
+    height: 3.9375rem;
+    padding: 0.875rem 1.0625rem 0.8125rem 1.0625rem;
+    align-items: center;
+    gap: 2.625rem;
+    flex-shrink: 0;
+    .navbar__link{
+        display: flex;
+        padding: 0%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-shrink: 0;
+        color: $grey;
+    }
+    .navbar__logo{
+        display: flex;
+        width: 12.3125rem;
+        height: 2.25rem;
+        padding: 0rem 1.1875rem 0rem 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+}

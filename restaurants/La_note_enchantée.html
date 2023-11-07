@@ -6,7 +6,7 @@
         <title>OhMyFood Paris</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,20 +16,24 @@
     </head>
     <body>
         <div class="main-container">
-            <header class="navbar">
-                <a class="navbar__link" href="../index.html"><img class="navbar__logo" src="../ASSETS/images/logo/ohmyfood.png" alt="logo de la page"></a>
+            <header class="navbar__restaurant">
+                <a class="navbar__link" href="../index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a><img class="navbar__logo" src="../ASSETS/images/logo/ohmyfood.png" alt="logo de la page">
             </header>
                 <div class="cover">
                     <img src="../ASSETS/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant La note enchantée">
                 </div>
-            <div class="main">
-                <div class="restaurant-contain">
-                    <div class="restau-name">
-                        <H1>La note enchantée</H1> <i class="fa-regular fa-heart"></i>
+            
+                <div class="restaurant">
+                    <div class="restaurant__name">
+                        <H1 class="restaurant__title">La note enchantée</H1>
+                        <div>
+                            <i class="fa-regular fa-heart fa-2xl"></i>
+                            <i class="fa-solid fa-heart fa-2xl"></i>
+                        </div>
                     </div>
-                    <section>
-                            <p class="section-title">Entrées</p>
-                        <a href="#">
+                    <section class="restaurant__list">
+                        <p class="section-title">Entrées</p>
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -39,7 +43,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -49,7 +53,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -59,7 +63,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -70,10 +74,9 @@
                             </article>
                         </a>
                     </section>
-                    <section>
+                    <section class="restaurant__list">
                             <p class="section-title">Plats</p>
-                        </div>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -83,7 +86,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -93,7 +96,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -106,7 +109,7 @@
                     </section>
                     <section>
                             <p class="section-title">Desserts</p>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -116,7 +119,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -126,7 +129,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a class="restaurant__link" href="#">
                             <article class="card">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -138,15 +141,15 @@
                         </a>
                     </section>
                 </div>
-            </div>
-            <footer>
+            
+            <footer class="footsection">
                 <!-- <img src="ASSETS/images/logo/ohmyfood@2x.svg" alt="logo de la page"> -->
-                <h2>ohmyfood</h2>
-                <div class="footer-nav">
-                    <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                    <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                    <a href="">Mentions légals</a>
-                    <a href="">Contacts</a>
+                <h2 class="footsection__title">ohmyfood</h2>
+                <div class="footsection__nav">
+                    <a class="footsection__link" href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a class="footsection__link" href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a class="footsection__link" href="">Mentions légals</a>
+                    <a class="footsection__link" href="">Contacts</a>
                 </div>
             </footer>
         </div> 
