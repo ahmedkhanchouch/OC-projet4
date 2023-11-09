@@ -12,6 +12,7 @@ $Secondary : #FCA311 ;
 $primary--2l : #F5EDFF ;
 $grey--tint4 :#7E7E7E ;
 
+
 /* font */
 $header--font :  'Roboto' ;
 $header--font--weight :  700 ;
@@ -58,45 +59,12 @@ $menu-section-font-size: 1rem;
 $menu-section-font-height : light; 
 $menu-section-font-weight : 300 ;
 
-// desktop style code
 // modules importé
 @import 'header';
+@import 'message';
+@import 'animation';
 
-
-// button style 
-.cta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:2.5rem;;
-}
-.message{
-    display: flex;
-    width: 13.625rem;
-    align-items: center;
-    justify-content: center;
-    height: 3.125rem;
-    flex-shrink: 0;
-    border-radius: 1.5625rem;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    color: var(--White, #FFF);
-    text-align: center;
-    
-    /* Button */
-    font-family: 'Roboto';
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-    transition-property: all ;
-    transition-duration: 0.4s;
-    &:hover{
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-        transform: scale(1.15);
-    }
-}
+// desktop style code
 
 
 a{
@@ -204,9 +172,16 @@ a{
     }
     
     .number{
-        position: absolute;
+        position: relative;
         right: 20rem;
+        & p{
+            position: absolute;
+        }
+        & i{
+            position: absolute;
+        }
     }
+
 }
 
  
@@ -259,6 +234,8 @@ a{
     
 }
 }
+
+// style restaurants des pages
 .restaurant{
     display: flex;
     flex-direction: column;
@@ -266,76 +243,16 @@ a{
     background-color: $background--color;
     border-radius: 2.5rem 2.5rem 0rem 0rem;
     gap: 2.5rem;
-    .restaurant__list{
-        padding:0.75rem ;
-        gap: 0.75rem;
-        display: flex;
-        flex-direction: column;
-        // align-items: flex-start;
-    }
-    .restaurant__link{
-        display: flex;
-        align-items: center;
-        border-radius: 0.94019rem;
-        background: var($White, #FFF);
-        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    }
-    .card{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        .card-content{
-            width: 100%;
-            display: flex;
-            // padding: 0.9375rem;
-            gap: 0.3125rem;
-            flex: 1 0 0;
-            .card-txt{
-                width:100%;
-                .card-title{
-                    overflow: hidden;
-                    color:$black;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    font-family: 'Roboto';
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                }
-                .card-subtitle{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    // overflow: hidden;
-                    color: #000;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    font-family: 'Roboto';
-                    font-size: 0.94019rem;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                    .prix{
-                        color: #353535;
-                        text-align: center;
-                        font-family: 'Roboto';
-                        font-size: 0.94019rem;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                    }
-                }
-            }
-        }
-    }
+    width: 60%;
+    margin: auto;
     .restaurant__name{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+
         padding: 20px 10px ;
+        position: relative;
         .restaurant__title{
             color: var(--Black, #101010);
             font-family: 'shrikhand';
@@ -343,6 +260,70 @@ a{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+        }
+    }
+    .restaurant__list{
+        padding:0.75rem ;
+        gap: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-start;
+        .restaurant__link{
+            display: flex;
+            align-items: center;
+            border-radius: 0.94019rem;
+            background: var($White, #FFF);
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+            .card{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .card-content{
+                    width: 100%;
+                    display: flex;
+                    // padding: 0.9375rem;
+                    gap: 0.3125rem;
+                    flex: 1 0 0;
+                    .card-txt{
+                        width:100%;
+                        .card-title{
+                            overflow: hidden;
+                            color:$black;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-family: 'Roboto';
+                            font-size: 1.125rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                        .card-subtitle{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            // overflow: hidden;
+                            color: #000;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-family: 'Roboto';
+                            font-size: 0.94019rem;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            .prix{
+                                color: #353535;
+                                text-align: center;
+                                font-family: 'Roboto';
+                                font-size: 0.94019rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
