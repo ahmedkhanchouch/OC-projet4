@@ -5,6 +5,7 @@
     justify-content: center;
     gap: -0.5px;
     flex-shrink: 0;
+    text-align: center;
     .navbar__link{
         padding: 14px 89px 13px 89px;
         justify-content: center;
@@ -26,5 +27,13 @@
         gap: 17px;
         flex-shrink: 0;
         background: var(--Grey-2, #EAEAEA);
+        color: var(--Grey, #353535);
+
+        /* Button */
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 }

@@ -1,54 +1,34 @@
 $heart_color : linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%) ;
 $Button--Gradient : #9356DC ;
-.wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .restaurant__link{
-    display: block;
-    // width: 200px;
-    // height: 40px;
-    // line-height: 40px;
-    // font-size: 18px;
-    // font-family: sans-serif;
-    // text-decoration: none;
-    // color: #333;
-    // border: 2px solid #333;
-    // letter-spacing: 2px;
-    // text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
-  
-  .restaurant__link span{
-    // position: relative;
-    // z-index: 2;
-  }
-  
-  .restaurant__link:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
+// .wrapper{
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+  .check{
+    width: 0px;
     background: #99E2D0;
     transition: all .35s;
-    opacity: 0%;
     border-radius:0rem 0.94019rem 0.94019rem 0rem;
+    height: 95px;
+    justify-content: center;
+    // margin: auto;
+    opacity: 0%;
+    display: flex;
+    align-items: center;
   }
   
   .restaurant__link:hover{
     color: #fff;
   }
   
-  .restaurant__link:hover:after{
-    width: 10%;
+  .restaurant__link:hover .check{
+    width: 80px;
+    // height: 100%;
     opacity: 1;
   }
+
 
 
   .heart__animation{
