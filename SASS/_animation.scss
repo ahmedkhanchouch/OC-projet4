@@ -1,15 +1,11 @@
 $heart_color : linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%) ;
 $Button--Gradient : #9356DC ;
-// .wrapper{
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
+
+// check animation 
   .check{
     width: 0px;
     background: #99E2D0;
-    transition: all .35s;
+    transition: width .35s;
     border-radius:0rem 0.94019rem 0.94019rem 0rem;
     height: 95px;
     justify-content: center;
@@ -30,12 +26,13 @@ $Button--Gradient : #9356DC ;
   }
 
 
-
+// heart animation 
   .heart__animation{
     position: relative;
+    right: 67PX;
     & i{
         position: absolute;
-        right: 9rem;
+        // right: 9rem;
     }
     & .fa-solid{
         color: $Button--Gradient;
