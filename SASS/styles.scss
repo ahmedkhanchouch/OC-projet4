@@ -64,13 +64,8 @@ $menu-section-font-weight : 300 ;
 @import 'message';
 @import 'animation';
 @import 'header-restaurants';
-
+@import "loader";
 // desktop style code
-
-
-a{
-    text-decoration: none;
-}
 
 .cover img{
     object-fit: cover;
