@@ -138,6 +138,17 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container.hide {
+  display: none;
 }
 
 .load {
@@ -262,6 +273,8 @@ a {
 .Fonctionnement-section .filters {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .Fonctionnement-section .filters__link {
@@ -270,11 +283,13 @@ a {
   justify-content: center;
   gap: 16px;
   align-items: center;
+  min-width: 20rem;
   flex-grow: 1;
   height: 4.52369rem;
   flex-shrink: 0;
   border-radius: 1.25rem;
   background-color: #F6F6F6;
+  text-align: center;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
@@ -291,6 +306,7 @@ a {
   height: 20px;
   width: 20px;
   background-color: #9356DC;
+  color: white;
   border-radius: 100%;
   margin-left: -120px;
   justify-content: center;
@@ -315,7 +331,6 @@ a {
   display: grid;
   grid-template-columns: 1FR 1FR;
   box-sizing: border-box;
-  width: fit-content;
   align-items: center;
   gap: 1.125rem;
   flex: 1 1 100%;
@@ -621,101 +636,20 @@ a {
     text-decoration: none;
   }
   .cover img {
-    object-fit: cover;
-    width: 100%;
     height: 17.1875rem;
-    flex-shrink: 0;
-  }
-  .main-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-container main {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    background-color: #F6F6F6;
-  }
-  .infogroupe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  .infogroupe .infogroupe__title {
-    color: #000;
-    text-align: center;
-    margin-bottom: 0;
-    /* Section Title */
-    font-family: "roboto";
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.756rem;
-    padding: 0rem 3.63rem;
-  }
-  .infogroupe__content {
-    color: var(--Grey, #353535);
-    text-align: center;
-    padding: 0rem 1.63rem;
-    /* Paragraph */
-    font-family: "Roboto";
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
   }
   .Fonctionnement-section {
-    padding: 3rem 0rem;
+    padding: 2rem 3rem;
     background-color: #FFF;
   }
-  .Fonctionnement-section .Fonctionnement__title {
-    color: #101010;
-    font-size: 24px;
-    font-family: "Roboto";
-    font-weight: 700;
-    word-wrap: break-word;
-  }
   .Fonctionnement-section .filters {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
   }
-  .Fonctionnement-section .filters .filters__link {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 16px;
-    align-items: center;
-    min-width: 20rem;
-    height: 4.52369rem;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    background-color: #F6F6F6;
-    /* Shadow/Instructions */
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  }
-  .Fonctionnement-section .filters .filters__link a {
-    color: #000;
-    font-family: "Roboto";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .Fonctionnement-section .filters .filters__link .number {
-    display: flex;
+  .Fonctionnement-section .filters .number {
     margin-left: -104px;
-    justify-content: center;
-    color: white;
     text-align: center;
   }
   .restaurants {
-    display: flex;
-    flex-direction: column;
     padding: 1.2rem;
   }
   .restaurants .restaurant-link {
@@ -724,33 +658,11 @@ a {
     width: 100%;
   }
   .restaurants .restaurant-link .card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.9375rem;
-    background: #FFF;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     width: 100%;
-  }
-  .restaurants .restaurant-link .card img {
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    width: 100%;
-    flex-shrink: 0;
-  }
-  .restaurants .restaurants__title {
-    color: black;
-    font-size: 24px;
-    font-family: "Roboto";
-    font-weight: 700;
-    word-wrap: break-word;
   }
   .restaurants .restaurant-cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.125rem;
-    box-sizing: border-box;
   }
   .restaurant {
     width: 100%;
