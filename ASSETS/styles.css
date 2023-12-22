@@ -158,7 +158,7 @@
   justify-content: space-evenly;
 }
 .load__bar {
-  background-color: #15DEA5;
+  background-color: #9415de;
   height: 100%;
   width: 3vh;
   animation: bars 1000ms backwards;
@@ -280,7 +280,7 @@ a {
 .Fonctionnement-section .filters__link {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   align-items: center;
   min-width: 20rem;
@@ -308,7 +308,7 @@ a {
   background-color: #9356DC;
   color: white;
   border-radius: 100%;
-  margin-left: -120px;
+  margin-left: -12px;
   justify-content: center;
 }
 
@@ -646,7 +646,7 @@ a {
     flex-direction: column;
   }
   .Fonctionnement-section .filters .number {
-    margin-left: -104px;
+    margin-left: -12px;
     text-align: center;
   }
   .restaurants {
