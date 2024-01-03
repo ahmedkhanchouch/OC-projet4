@@ -54,6 +54,8 @@ $anim-delay: $anim-dur / $num-bars;
         animation-delay: 1000ms;
     }
 }
+
+
 @keyframes bars {
     0% {
         transform: scaleY(0.5);
@@ -65,3 +67,31 @@ $anim-delay: $anim-dur / $num-bars;
 a{
     text-decoration: none;
 }
+
+
+.restaurant__list {
+    overflow: hidden;
+
+    .restaurant__link {
+      position: relative;
+      animation: menu-appear 1s normal;
+    }
+
+    &.menu2 .restaurant__link {
+      animation: menu-appear 3s normal;
+    }
+
+    &.menu3 .restaurant__link {
+      animation: menu-appear 5s normal;
+    }
+  }
+
+
+  @keyframes menu-appear {
+    0% {
+      top: -500px;
+    }
+    100% {
+      top: 0px;
+    }
+  }

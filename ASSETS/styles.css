@@ -206,6 +206,28 @@ a {
   text-decoration: none;
 }
 
+.restaurant__list {
+  overflow: hidden;
+}
+.restaurant__list .restaurant__link {
+  position: relative;
+  animation: menu-appear 1s normal;
+}
+.restaurant__list.menu2 .restaurant__link {
+  animation: menu-appear 3s normal;
+}
+.restaurant__list.menu3 .restaurant__link {
+  animation: menu-appear 5s normal;
+}
+
+@keyframes menu-appear {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 .cover img {
   object-fit: cover;
   width: 100%;
