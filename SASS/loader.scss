@@ -10,7 +10,8 @@ z-index: 999;
 position: fixed;
 top: 0;
 left: 0;
-
+animation: hider 200ms forwards;
+animation-delay: 3s;
 &.hide {
 display: none;
 }
@@ -65,11 +66,15 @@ $anim-delay: $anim-dur / $num-bars;
     }
 }
 
+@keyframes hider {
+   to {
+     transform: scale(0); 
+    } 
+  }
 a{
     text-decoration: none;
 }
-
-
+// animation apparaition menu 
 .restaurant__list {
     overflow: hidden;
 
