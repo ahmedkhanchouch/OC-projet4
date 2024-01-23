@@ -97,14 +97,18 @@
 .heart__animation {
   position: relative;
   right: 67PX;
+  height: 45px;
 }
 .heart__animation i {
   position: absolute;
+  font-size: 45px;
 }
 .heart__animation .fa-solid {
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  opacity: 0%;
+  opacity: 0;
   color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .heart__animation .fa-solid:hover {
   opacity: 1;
@@ -244,6 +248,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .cover img {

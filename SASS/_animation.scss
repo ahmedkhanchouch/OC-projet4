@@ -30,14 +30,20 @@ $Button--Gradient : #9356DC ;
   .heart__animation{
     position: relative;
     right: 67PX;
+    height: 45px;
     & i{
         position: absolute;
+        font-size: 45px;
+
+        
         // right: 9rem;
     }
     & .fa-solid{
         background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-        opacity: 0%;
+        opacity: 0;
         color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
         &:hover{
             opacity: 1;
         }
