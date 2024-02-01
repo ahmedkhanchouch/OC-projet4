@@ -149,7 +149,7 @@ a{
     gap: 1.5625rem;
     align-self: stretch;
 
-    @media (min-width:767.98px) {
+    @media (min-width:900px) {
         padding: 3.125rem 11.25rem;    
     }
 
@@ -167,7 +167,7 @@ a{
         gap: 1rem;
         flex-direction: column;
 
-        @media (min-width:767.98px) {
+        @media (min-width:1000px) {
             flex-direction: row;    
         }
         &__link{
@@ -225,7 +225,7 @@ a{
     gap: 1.75rem;
     align-self: stretch;
 
-    @media (min-width:767.98px){
+    @media (min-width:1000px){
         padding: 0rem 11.25rem;
     }
     .restaurants__title{
@@ -425,7 +425,7 @@ a{
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
-                            // overflow: hidden;
+                            overflow: hidden;
                             color: #000;
                             text-overflow: ellipsis;
                             white-space: nowrap;
@@ -486,6 +486,7 @@ a{
         .footsection__nav{
             display: flex;
             flex-direction: column;
+            gap: 15px;
             
             @media (min-width:767.98px){
                 flex-direction: row;
@@ -496,5 +497,7 @@ a{
         
         .footsection__link{
             color: $White;
+            display: flex;
+            gap: 10px;
         }
     }

@@ -109,6 +109,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  transition: Opacity 400ms ease;
 }
 .heart__animation .fa-solid:hover {
   opacity: 1;
@@ -313,7 +314,7 @@ a {
   gap: 1.5625rem;
   align-self: stretch;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 900px) {
   .Fonctionnement-section {
     padding: 3.125rem 11.25rem;
   }
@@ -332,7 +333,7 @@ a {
   gap: 1rem;
   flex-direction: column;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 1000px) {
   .Fonctionnement-section .filters {
     flex-direction: row;
   }
@@ -381,7 +382,7 @@ a {
   gap: 1.75rem;
   align-self: stretch;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 1000px) {
   .restaurants {
     padding: 0rem 11.25rem;
   }
@@ -577,6 +578,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -627,6 +629,7 @@ a {
 .footsection .footsection__nav {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 @media (min-width: 767.98px) {
   .footsection .footsection__nav {
@@ -636,6 +639,8 @@ a {
 }
 .footsection .footsection__link {
   color: #FFFFFF;
+  display: flex;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -34,9 +34,6 @@ $Button--Gradient : #9356DC ;
     & i{
         position: absolute;
         font-size: 35px;
-
-        
-        // right: 9rem;
     }
     & .fa-solid{
         background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -44,6 +41,7 @@ $Button--Gradient : #9356DC ;
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
+        transition: Opacity 400ms ease;
         &:hover{
             opacity: 1;
         }
