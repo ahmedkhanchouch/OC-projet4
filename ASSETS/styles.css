@@ -553,11 +553,11 @@ a {
   align-items: center;
 }
 .restaurant__list .restaurant__link .card .card__content {
-  width: 100%;
   display: flex;
   padding: 0rem 0.9375rem;
   gap: 0.3125rem;
-  flex: 1 0 0;
+  flex: 1 1 100%;
+  overflow: hidden;
 }
 .restaurant__list .restaurant__link .card .card__content .card__txt {
   width: 100%;
@@ -587,6 +587,11 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+.restaurant__list .restaurant__link .card .card__content .card__txt .card__subtitle .subtitle-txt {
+  flex: 1 1 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .restaurant__list .restaurant__link .card .card__content .card__txt .card__subtitle .prix {
   color: #353535;
